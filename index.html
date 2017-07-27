@@ -1,8 +1,24 @@
 <!DOCTYPE html>
 <head>
     <title>Welcome to tepia!</title>
+    <script src="https://rawgit.com/flatiron/director/master/build/director.min.js"></script>
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to tepia!</h1>
-    <p>Hi! Welcome to my website!</p>
+    <div id="wrapper">
+        <ul>
+            <li onclick="navigateTo('/')">Home</li>
+            <li onclick="navigateTo('/about')">About</li>
+        </ul>
+        <div id="content">
+            <h1>Welcome to tepia!</h1>
+            <p>Hi! Welcome to my website!</p>
+        </div>
+        <div id="footer">
+            <hr/>
+            <p>Website by Xanuthatusu</p>
+        </div>
+    </div>
 </body>
