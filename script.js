@@ -1,10 +1,19 @@
-var home = () => console.log('home')
-var about = () => console.log('about')
+var lastPage = "home"
+
+var switchPage = newPage => {
+    document.getElementById(lastPage).className = "hidden"
+    document.getElementById(newPage).className = "content showing"
+    lastPage = newPage
+}
+
+var home = () => switchPage("home")
+var about = () => switchPage("about")
 
 var navigateTo = url => router.setRoute(url)
 
 var routes = {
-    '/': home,
+    '/': () => navigateTo('/home'),
+    '/home': home,
     '/about': about
 }
 
