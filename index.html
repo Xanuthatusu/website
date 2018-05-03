@@ -1,28 +1,57 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Welcome to tepia!</title>
-    <script src="https://rawgit.com/flatiron/director/master/build/director.min.js"></script>
-    <script src="script.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+   <meta charset="UTF-8">
+   <title>Welcome to Tepia!</title>
+   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div id="wrapper">
-        <ul>
-            <li onclick="navigateTo('/home')">Home</li>
-            <li onclick="navigateTo('/about')">About</li>
-        </ul>
-        <div id="home" class="content hidden">
-            <h1>Welcome to tepia!</h1>
-            <p>Hi! Welcome to my website!</p>
-        </div>
-        <div id="about" class="content hidden">
-            <h1>About me</h1>
-            <p>This is an about me page</p>
-        </div>
-        <div id="footer">
-            <hr/>
-            <p>Website by Anthony George</p>
-        </div>
-    </div>
+   <ul class="navigation-bar">
+      <li>Home</li>
+      <li>Projects</li>
+      <li>About</li>
+      <li id="emphasizedHeader">Contact</li>
+   </ul>
+
+   <div class="header">
+      <span id="bigTitle">Developer.</span>
+      <span id="bigSubtitle">Anthony George</span>
+   </div>
+
+   <div id="downwardArrow"></div>
+
+   <div class="hidden">
+   <ul>
+      <li>Home</li>
+      <li>
+         <h3>Projects</h3>
+         <ul>
+            <li><a href="">Keyboards</a></li>
+            <li><a href="">Fountain Pens</a></li>
+            <li><a href="">Homelab</a></li>
+            <li><a href="">Gardening</a></li>
+            <li><a href="">Travel</a></li>
+         </ul>
+      </li>
+      <li>
+         <h3>About</h3>
+         <span>I am a 18 year old software developer currently attending school at DSU in St. George, Utah. I just graduated high school from the SUCCESS Academy at DSU with my Associates Degree. I plan on getting my Bachelors Degree in Computer Science in 2020. In the meantime, I'm working at a local tech company called <a href="https://www.zonos.com">Zonos.</a></span>
+      </li>
+     <li>
+         <h3>Contact</h3>
+         <ul>
+            <li><a href="">Email</a></li>
+            <li><a href="https://github.com/xanuthatusu">Github</a></li>
+            <li><a href="">LinkedIn</a></li>
+            <li><a href=""></a></li>
+         </ul>
+      </li>
+   </ul>
+
+   <h1>Projects</h1>
+   <h2>Keyboards</h2>
+   <p>So keyboards are amazing, right? The best interface between human and machine. Precise, fast, intuitive...elegant. But they are fundementally broken, from the layout, to the materials, to the ergonomics. It seems that whoever designed the modern keyboard never wanted any sane person to use it. This only speaks to the versility and awesomeness of keyboards, though. To be so broken but still be so widely used by so many people.</p>
+   </div>
 </body>
+</html>
