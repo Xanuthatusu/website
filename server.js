@@ -20,6 +20,12 @@ app.use(compression());
 
 app.use('/api', parrotApi);
 
-var server = app.listen(5000, () => {
-  console.log('Express listening at http://localhost:5000');
+app.use('/src', express.static(__dirname + '/src'));
+app.use('/bower_components', express.static(__dirname + '/bower_componenets'));
+app.use('/', (req, res) => {
+  res.sendFile(__dirname + '/index.html');
+})
+
+var server = app.listen(5050, () => {
+  console.log('Express listening at http://localhost:5050');
 });

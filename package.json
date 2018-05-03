@@ -9,7 +9,8 @@
         "node": "6.11.1"
     },
     "scripts": {
-        "start": "python -m http.server 8088 & node server.js"
+        "start": "http-server -a localhost -p 8088 -c-1",
+        "server": "node server.js"
     },
     "dependencies": {
         "bwip-js": "^1.6.3",
