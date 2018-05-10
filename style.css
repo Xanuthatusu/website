@@ -10,11 +10,29 @@ body {
   text-align: right;
   justify-content: flex-end;
   margin: 20px 10px 10px 10px;
+  color: #eee;
+  transition: color 0.3s linear;
+}
+
+.navigation-bar a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .navigation-bar li {
   padding: 15px 50px;
   text-transform: uppercase;
+}
+
+.navigation-bar:hover {
+  color: #777;
+  transition: color 0.3s linear;
+}
+
+.navigation-bar li:hover {
+  color: #eee;
+  transition: color 0.2s linear;
+  cursor: pointer;
 }
 
 #emphasizedHeader {
@@ -44,7 +62,7 @@ body {
 
 #bigTitle {
   text-transform: uppercase;
-  font-size: 72px;
+  font-size: 100px;
   letter-spacing: 7px;
   text-align: center;
 }
@@ -70,11 +88,6 @@ body {
 
 ul {
   list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-  color: #eee;
 }
 
 .hidden {
