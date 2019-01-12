@@ -7,8 +7,9 @@ const request = require('superagent');
 const bwipjs = require('bwip-js');
 
 router.get('/test', (req, res) => {
+  res.statusCode = 200;
   res.write('You\'ve just hit my test endpoint!');
-  res.sendStatus(200);
+  res.send();
 })
 
 module.exports = router;
